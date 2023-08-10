@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: czcq
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-tffi-tenant/byoc-app-bdez/czcq@sha256:a8b37904d40a39c8535dc6b7484b06c5cc1a3677d2fe6a6605340aea6a0f4fe7
         name: my-java-quarkus
         ports:
         - containerPort: 8081
