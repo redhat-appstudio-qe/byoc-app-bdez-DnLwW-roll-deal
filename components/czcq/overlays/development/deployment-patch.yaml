@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: czcq
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-tffi-tenant/byoc-app-bdez/czcq@sha256:a8b37904d40a39c8535dc6b7484b06c5cc1a3677d2fe6a6605340aea6a0f4fe7
+        name: my-java-quarkus
+        resources: {}
+status: {}
